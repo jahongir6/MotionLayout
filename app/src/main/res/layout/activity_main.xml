@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="15sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5sp"
+        app:cardMaxElevation="5sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_search"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="15sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5sp"
+        app:cardMaxElevation="5sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_search_24" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_saved"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="15sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5sp"
+        app:cardMaxElevation="5sp"
+        app:layout_constraintRight_toLeftOf="@id/btn_search"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_bookmark_24" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Otkir Hoshimov"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.5"
+                android:text="1941-2013"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginVertical="15sp"
+                app:cardCornerRadius="15sp"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:alpha="0.3"
+                        android:text="Oʻtkir Hoshimov 1941-yil, 5-avgustda Toshkent shahrida oddiy bir oilada dunyoga keldi. Yozuvchining bolaligi urush va urushdan keyingi mashaqqatli davrga toʻgʻri keldi. „Oʻsha davrda non tanqis boʻlgani bilan kutubxonalarda kitob koʻp edi“¸ deya eslagan edi yozuvchi oʻz xotiralarida.[1]
+
+Kitob oʻqish barobarida Oʻtkir Hoshimov pochtada xat tarqatuvchi boʻlib ishladi. Aynan mana shu ish Oʻtkir Hoshimovni oddiy odamlarning kitobdagi hayotdan butunlay boshqa turmushiga oshno qildi.
+ ekiston“, 1963–1966-yil „Toshkent haqiqati“ 1966–1982-yillari „Toshkent oqshomi“ gazetalarida adabiy xodim boʻlib ishladi.Uning kitoblari juda qiziqarli va hayotiy kitob hisoblanadi
+
+Ijodi
+Yozuvchining ilk asari 1962-yilda „Poʻlat chavandoz“ nomida ocherklar toʻplami tarzida nashrdan chiqdi. Ammo yozuvchiga muvaffaqiyat keltirgan asar 1970-yilda nashr qilingan „Bahor qaytmaydi“ qissasi boʻldi.
+
+Oʻsha paytda nashr qilinayotgan mafkura targʻibotidan iborat asarlar fonida yozuvchi Oʻtkir Hoshimovning oddiy insoniy munosabatlar haqidagi bu asari qorongʻu osmonda chaqnagan mushak kabi eslanadi..
+
+Bu asar asosida suratga olingan videofilm oʻz vaqtida eng koʻp tomosha qilingan asar sifatida tarixga kirdi.
+
+Oʻtkir Hoshimovning bir qancha asarlari ekranlashtirilgan. „Xazon boʻlgan bahor“, „Inson sadoqati“ (1975), „Vijdon dorisi“, „Toʻylar muborak“ (1979), „Qatagʻon“ kabi drama, komediya, bir qator kinossenariylar muallifi. „Daftar hoshiyasidagi bitiklar“(2001) kitobi ijtimoiy -maʼnaviy hayotda muayyan iz qoldirgan.
+
+„Choʻl havosi“ nomli birinchi qissasi 1963 yilda bosilib chiqqan. Talabchan adib Abdulla Qahhorning eʼtiboriga sazovor boʻlgan."
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
